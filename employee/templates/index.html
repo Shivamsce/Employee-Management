@@ -1,0 +1,41 @@
+{% load static %}
+{%include 'header.html'%}
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/2.gif' %}" alt="Employee" width="100%" height="550">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/123.gif' %}" alt="EmployeeGif" width="100%" height="550">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+<!--footer start-->
+<div class="container-fluid bg-dark" style="height:300px">
+  <h3 class="text-center text-light pt-3"> Hii </h3>
+  <h3 class="text-center text-light pt-2"> Welcome to our portal </h3>
+  <h4 class="text-center text-light pt-2">Employee Management System </h4>
+  <h6 class="text-center text-light pt-2">Already an User</h6>
+  <center><a href="{% url 'emp_login' %}" class="btn btn-primary float-center btn-center  mb-3">Click Here</a></center>
+  <p class="text-center text-primary">Copyright &copy; BSPTCL 2021 - All Rights Reserved.</p>
+</div>
+
+<!--footer end-->
